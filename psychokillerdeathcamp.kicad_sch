@@ -57,6 +57,52 @@
 		)
 	)
 	(sheet
+		(at 21.59 123.19)
+		(size 67.31 55.88)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "bd183db4-cb21-4b4a-9f0a-6d20d3a32314")
+		(property "Sheetname" "MCU"
+			(at 21.59 122.4784 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "untitled.kicad_sch"
+			(at 21.59 179.6546 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "psychokillerdeathcamp"
+				(path "/bb761b47-4aa1-4d7a-b464-2f14c3f8c1bc"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
 		(at 19.05 38.1)
 		(size 67.31 64.77)
 		(exclude_from_sim no)

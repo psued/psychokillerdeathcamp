@@ -444,6 +444,10 @@
     [
       "f76ae774-b515-4743-930f-bcaf057c06ac",
       "fpga"
+    ],
+    [
+      "bd183db4-cb21-4b4a-9f0a-6d20d3a32314",
+      "MCU"
     ]
   ],
   "text_variables": {},
