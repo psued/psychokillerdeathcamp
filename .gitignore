@@ -1,1 +1,3 @@
-.history # Local KiCad history/backups
+# Local KiCad stuff
+.history/
+*.kicad_prl
