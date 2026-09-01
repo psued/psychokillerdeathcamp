@@ -673,7 +673,7 @@
         "uuid": "bb761b47-4aa1-4d7a-b464-2f14c3f8c1bc"
       }
     ],
-    "used_designators": "U1-3",
+    "used_designators": "U1-3,J1-2,R1-7,#PWR1-10",
     "variants": []
   },
   "sheets": [
@@ -684,6 +684,10 @@
     [
       "4e27f84f-b409-4451-a36b-8da2b783ead5",
       "Power"
+    ],
+    [
+      "f76ae774-b515-4743-930f-bcaf057c06ac",
+      "fpga"
     ]
   ],
   "text_variables": {},
