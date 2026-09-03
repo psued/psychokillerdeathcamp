@@ -6,7 +6,6 @@
 		(pin_names
 			(offset 1.016)
 		)
-	(symbol "TPS54294PWP"
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -25,7 +24,6 @@
 		)
 		(property "Value" "S25FL127S"
 			(at -10.414 -18.034 0)
-			(at 4.826 4.572 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -37,19 +35,6 @@
 		)
 		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
 			(at 0 -11.43 0)
-		(property "Value" "TPS54294PWP"
-			(at 8.636 4.572 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Footprint" "SOP65P640X120-17N"
-			(at 26.67 -94.92 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -61,11 +46,6 @@
 		)
 		(property "Datasheet" "https://www.infineon.com/dgdl/Infineon-S25FL127S_128_Mb_(16_MB)_3.0V_SPI_Flash_Memory-DataSheet-v18_00-EN.pdf"
 			(at 0 -13.97 0)
-				(justify left top)
-			)
-		)
-		(property "Datasheet" "http://www.ti.com/lit/gpn/TPS54294"
-			(at 26.67 -194.92 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -87,10 +67,6 @@
 			)
 		)
 		(property "ki_keywords" "SPI QSPI Quad SPI NOR flash memory nonvolatile"
-				(justify left top)
-			)
-		)
-		(property "Description" "4.5 V to 18 V input, dual 2 A output, synchronous step-down converter, with 1 ms fixed soft start"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -103,8 +79,6 @@
 		)
 		(property "ki_fp_filters" "SOIC*3.9x4.9mm*P1.27mm* SOIC*5.28x5.23mm*P1.27mm* WSON*6x5mm*P1.27mm*"
 			(at 0 0 0)
-		(property "Height" "1.2"
-			(at 26.67 -394.92 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -121,6 +95,300 @@
 				(stroke
 					(width 0.254)
 					(type solid)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(pin input line
+				(at -20.32 0 0)
+				(length 2.54)
+				(name "~{S}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "~{CS}" input line)
+			)
+			(pin bidirectional line
+				(at -20.32 -3.81 0)
+				(length 2.54)
+				(name "DQ1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "MISO" output line)
+				(alternate "SO" output line)
+			)
+			(pin bidirectional line
+				(at -20.32 -7.62 0)
+				(length 2.54)
+				(name "~{W}/V~{PP}/DQ2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "~{WP}" input line)
+			)
+			(pin power_in line
+				(at -17.78 -11.43 180)
+				(length 2.54)
+				(name "VSS"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 10.16 -7.62 180)
+				(length 2.54)
+				(name "DQ0"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "MOSI" input line)
+				(alternate "SI" input line)
+			)
+			(pin input clock
+				(at 10.16 -3.81 180)
+				(length 2.54)
+				(name "C"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "SCK" input clock)
+			)
+			(pin bidirectional line
+				(at 10.16 0 180)
+				(length 2.54)
+				(name "~{HOLD}/DQ3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "~{RESET}/DQ3" bidirectional line)
+			)
+			(pin power_in line
+				(at 10.16 3.81 180)
+				(length 2.54)
+				(name "VCC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "s25fl127s"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "U"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "TPS54294PWP"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "U"
+			(at 4.826 4.572 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Value" "TPS54294PWP"
+			(at 8.636 4.572 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Footprint" "SOP65P640X120-17N"
+			(at 26.67 -94.92 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/gpn/TPS54294"
+			(at 26.67 -194.92 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Description" "4.5 V to 18 V input, dual 2 A output, synchronous step-down converter, with 1 ms fixed soft start"
+			(at 26.67 -294.92 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Height" "1.2"
+			(at 26.67 -394.92 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 				(justify left top)
 			)
 		)
@@ -184,10 +452,6 @@
 					(type background)
 				)
 			)
-			(pin input line
-				(at -20.32 0 0)
-				(length 2.54)
-				(name "~{S}"
 			(pin passive line
 				(at 0 0 0)
 				(length 5.08)
@@ -205,12 +469,6 @@
 						)
 					)
 				)
-				(alternate "~{CS}" input line)
-			)
-			(pin bidirectional line
-				(at -20.32 -3.81 0)
-				(length 2.54)
-				(name "DQ1"
 			)
 			(pin passive line
 				(at 0 -2.54 0)
@@ -229,13 +487,6 @@
 						)
 					)
 				)
-				(alternate "MISO" output line)
-				(alternate "SO" output line)
-			)
-			(pin bidirectional line
-				(at -20.32 -7.62 0)
-				(length 2.54)
-				(name "~{W}/V~{PP}/DQ2"
 			)
 			(pin passive line
 				(at 0 -5.08 0)
@@ -254,12 +505,6 @@
 						)
 					)
 				)
-				(alternate "~{WP}" input line)
-			)
-			(pin power_in line
-				(at -17.78 -11.43 180)
-				(length 2.54)
-				(name "VSS"
 			)
 			(pin passive line
 				(at 0 -7.62 0)
@@ -279,10 +524,6 @@
 					)
 				)
 			)
-			(pin bidirectional line
-				(at 10.16 -7.62 180)
-				(length 2.54)
-				(name "DQ0"
 			(pin passive line
 				(at 0 -10.16 0)
 				(length 5.08)
@@ -300,13 +541,6 @@
 						)
 					)
 				)
-				(alternate "MOSI" input line)
-				(alternate "SI" input line)
-			)
-			(pin input clock
-				(at 10.16 -3.81 180)
-				(length 2.54)
-				(name "C"
 			)
 			(pin passive line
 				(at 0 -12.7 0)
@@ -325,12 +559,6 @@
 						)
 					)
 				)
-				(alternate "SCK" input clock)
-			)
-			(pin bidirectional line
-				(at 10.16 0 180)
-				(length 2.54)
-				(name "~{HOLD}/DQ3"
 			)
 			(pin passive line
 				(at 0 -15.24 0)
@@ -349,12 +577,6 @@
 						)
 					)
 				)
-				(alternate "~{RESET}/DQ3" bidirectional line)
-			)
-			(pin power_in line
-				(at 10.16 3.81 180)
-				(length 2.54)
-				(name "VCC"
 			)
 			(pin passive line
 				(at 0 -17.78 0)
@@ -374,10 +596,6 @@
 					)
 				)
 			)
-		)
-		(embedded_fonts no)
-	)
-	(symbol "s25fl127s"
 			(pin passive line
 				(at 30.48 -17.78 180)
 				(length 5.08)
@@ -553,7 +771,6 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "U"
-			(at 0 0 0)
 			(at -10.414 21.336 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -561,10 +778,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-			)
-		)
-		(property "Value" ""
-			(at 0 0 0)
 				(justify left bottom)
 			)
 		)
@@ -576,9 +789,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-			)
-		)
-		(property "Footprint" ""
 				(justify left bottom)
 			)
 		)
@@ -603,9 +813,9 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(justify bottom)
 			)
 		)
-		(property "Description" ""
 		(property "Description" "4.5V to 18V Input, 3A Synchronous Step-Down Converter"
 			(at 0 0 0)
 			(show_name no)
@@ -616,6 +826,8 @@
 					(size 1.27 1.27)
 				)
 				(justify bottom)
+			)
+		)
 		(property "MF" "Texas Instruments"
 			(at 0 0 0)
 			(show_name no)
@@ -997,5 +1209,6 @@
 				)
 			)
 		)
+		(embedded_fonts no)
 	)
 )
